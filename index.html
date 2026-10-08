@@ -154,9 +154,6 @@ body.touch .fire{display:grid;place-items:center}
 
 /* scope */
 #scope{position:absolute;inset:0;pointer-events:none;--sr:min(44vmin,300px);--sc:rgba(241,230,207,.7);overflow:hidden}
-#scope .vig{position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,transparent 0,transparent calc(var(--sr) - 6px),rgba(6,8,10,.62) calc(var(--sr) + 3px),rgba(6,8,10,.86) 100%)}
-#scope .rim{position:absolute;left:50%;top:50%;width:calc(var(--sr)*2);height:calc(var(--sr)*2);transform:translate(-50%,-50%);border-radius:50%;border:2px solid rgba(241,230,207,.32);box-shadow:inset 0 0 50px rgba(0,0,0,.45),0 0 0 6px rgba(6,8,10,.35);transition:border-color .08s,box-shadow .08s}
-#scope.fire .rim{border-color:rgba(102,240,255,.9);box-shadow:inset 0 0 60px rgba(102,240,255,.28),0 0 0 6px rgba(6,8,10,.35)}
 #scope .post,#scope .hair{position:absolute;display:block;background:var(--sc);box-shadow:0 0 2px rgba(0,0,0,.7)}
 #scope .post.l{left:0;width:calc(50% - var(--sr)*.55);top:calc(50% - 2px);height:4px}
 #scope .post.r{right:0;width:calc(50% - var(--sr)*.55);top:calc(50% - 2px);height:4px}
@@ -230,7 +227,6 @@ body.xr #gl{visibility:hidden}
   <div id="hurt"></div>
 
   <div id="scope" hidden>
-    <div class="vig"></div><div class="rim"></div>
     <i class="post l"></i><i class="post r"></i><i class="post b"></i>
     <i class="hair l"></i><i class="hair r"></i><i class="hair t"></i><i class="hair b"></i>
     <div class="mil"></div><div class="milv"></div>
@@ -274,7 +270,7 @@ body.xr #gl{visibility:hidden}
         <button class="mbtn" id="btnHow"><b>遊び方</b><small>操作とスコア</small></button>
       </nav>
       <div class="best"><span class="lbl">Best</span><b id="bestScore">—</b><span id="bestNote">ノーマル · 90秒</span></div>
-      <p class="lbl" id="ver" style="margin:0">Ver 1.5 · 実寸大＆床検出AR</p>
+      <p class="lbl" id="ver" style="margin:0">Ver 1.6 · 実寸大＆床検出AR</p>
     </div>
   </section>
 
